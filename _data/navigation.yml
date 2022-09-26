@@ -3,15 +3,15 @@ main:
   - title: "Home"
     url: /
 
- # - title: "Research"
-  #  url: /publications/
+#   - title: "Research"
+#    url: /publications/
 
   - title: "Note"
     url: https://thangckt.github.io/note
   
   - title: "Thatool"
-    url: https://thangckt.github.io/thatool_docs
-
+    url: https://thangckt.github.io/thatool           # thatool_docs
+    
   - title: "MediaLib"
     url: https://thangckt.github.io/mediaLib
     
