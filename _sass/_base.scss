@@ -176,6 +176,14 @@ li ol {
    Media and embeds
    ========================================================================== */
 
+@media only screen and (min-width: 541px) {
+  gap{display: none;}
+}
+
+@media only screen and (max-width: 540px) {
+  gap{clear:both; display: block;}
+}
+
 /* Figures and images */
 
 figure {
