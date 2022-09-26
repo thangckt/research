@@ -1,22 +1,39 @@
 # main links links
 main:
-  - title: "Publications"
+  - title: "Home"
+    url: /
+
+  - title: "Research"
     url: /publications/
 
-  - title: "Talks"
-    url: /talks/    
+  - title: "Note"
+    url: https://thangckt.github.io/note
+  
+  - title: "Thatool"
+    url: https://thangckt.github.io/thatool_docs
 
-  - title: "Teaching"
-    url: /teaching/    
+  - title: "MediaLib"
+    url: https://thangckt.github.io/mediaLib
     
-  - title: "Portfolio"
-    url: /portfolio/
-        
-  - title: "Blog Posts"
-    url: /year-archive/
-    
-  - title: "CV"
-    url: /cv/
-    
-  - title: "Guide"
-    url: /markdown/
+
+  # - title: "cv_pdf"
+  #   url: https://thangckt.github.io/files/2022_Thang_CV.pdf
+
+  # - title: "CV"
+  #   url: /cv/
+
+  # - title: "Talks"
+  #   url: /talks/
+
+  #- title: "Teaching"
+  #  url: /teaching/
+
+  #- title: "Blog Posts"
+  #  url: /year-archive/
+
+  # - title: "Notes"
+  #   url: /notes/
+
+
+
+
