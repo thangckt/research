@@ -15,8 +15,9 @@ Some others forks:
     ```
     ## in file: _includes/head/custom.html  and add 2 files in assets/css/
     <link rel="stylesheet" href="{{ base_path }}/assets/css/bootstrap.css"/>  
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> 
+    ## options
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>  -->
     ```
 
 
