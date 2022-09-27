@@ -52,3 +52,4 @@ But this may not work. Solution: update `bootstrap.css`. just edit file: `_inclu
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"/>  
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" ></script>
 ```
+But the dynamic button may only work with `bootstrap 3`
