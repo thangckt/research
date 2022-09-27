@@ -49,8 +49,8 @@ Change font size nav-tabs, nav-side,... in file `bootstraps.css`
 
 But this may not work. Solution: update `bootstrap.css`. just edit file: `_includes/head/custom.html`, do not need download 2 files .css and .js
 ```
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"/>  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"/>  
 <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" ></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"></script>
 ```
 But the dynamic button may only work with `bootstrap 3`
