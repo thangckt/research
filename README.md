@@ -23,7 +23,7 @@ Some others forks:
 - [MichaelRamamonjisoa](https://github.com/MichaelRamamonjisoa/michaelramamonjisoa.github.io)
     what is difference in this repo:
     ```
-    ## in file: _includes/head/custom.html  and add 2 files in assets/css/
+    ## in file: _includes/head/custom.html  and add 2 files `bootstrap.min.css`, `bootstrap.css` into assets/css/
     <link rel="stylesheet" href="{{ base_path }}/assets/css/bootstrap.css"/>  
     ## options
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -48,4 +48,4 @@ Change font size nav-tabs, nav-side,... in file `bootstraps.css`
 
 ```
 
-But this may not work. So go `https://github.com/twbs/bootstrap` to update `bootstrap5.css`. It works now.
+But this may not work. So go `https://github.com/twbs/bootstrap` to update 2 files `bootstrap.css` and `bootstrap.min.css` to newer. It works now.
