@@ -4103,8 +4103,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   line-height: 1.42857143;
   border: 1px solid transparent;
   border-radius: 4px 4px 0 0;
-  color: #575757;
-  font-size: 26px;
+  /* color: #575757;
+  font-size: 26px; */
 }
 .nav-tabs > li > a:hover {
   border-color: #eeeeee #eeeeee #ddd;
@@ -4117,6 +4117,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   background-color: #fff;
   border: 1px solid #ddd;
   border-bottom-color: transparent;
+  font-size: 26px; 
 }
 .nav-tabs.nav-justified {
   width: 100%;
