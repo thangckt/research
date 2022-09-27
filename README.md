@@ -20,6 +20,15 @@ Some others forks:
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>  -->
     ```
 
+Change font size nav-tabs, nav-side,... in file `bootstraps.css`
+```
+
+.navbar-brand
+{
+  font-size: 100px;
+}
+
+```
 
 
 ## To run locally (not on GitHub Pages, to serve on your own computer)
