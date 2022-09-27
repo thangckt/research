@@ -12,7 +12,12 @@ See more info at [https://academicpages.github.io/](https://academicpages.github
 Some others forks:
 - [MichaelRamamonjisoa](https://github.com/MichaelRamamonjisoa/michaelramamonjisoa.github.io)
     what is difference in this repo:
-    
+    ```
+    ## in file: _includes/head/custom.html  and add 2 files in assets/css/
+    <link rel="stylesheet" href="{{ base_path }}/assets/css/bootstrap.css"/>  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> 
+    ```
 
 
 
