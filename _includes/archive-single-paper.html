@@ -28,14 +28,14 @@
 			</a>
 		  </div>
 		  <div class="col-xs-12 col-sm-8 col-md-8">
-			<h4 style="font-size:16px">{{post.title}}</h4>
+			<h4 style="font-size:18px">{{post.title}}</h4>
 		  	<!-- <h4>{{post.title}}</h4> -->
 			{% if post.award %}
 			<h5><i>({{post.award}})</i></h5>
 			{% endif %}
-		  <!-- <div class="col-xs-12 col-sm-12 col-md-12">
-			<h4 style="font-max-size:4em">{{post.authors}}</h4> -->
-			<p> {{post.authors}} </p>
+		  <!-- <div class="col-xs-12 col-sm-12 col-md-12"> -->
+			<h4 style="size:14px">{{post.authors}}</h4>
+			<!-- <p> {{post.authors}} </p> -->
 
 			<button type="button" class="btn btn-primary btn-sm btn-rounded" data-bs-toggle="collapse.show" data-bs-target="#{{post.short}}_abstract" aria-expanded="false" aria-controls="{{post.short}}_abstract">Abstract</button>
 			<div id="{{post.short}}_abstract" class="collapse">
