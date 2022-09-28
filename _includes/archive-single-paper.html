@@ -13,28 +13,6 @@
 {% endif %}
 
 <div class="{{ include.type | default: "list" }}__item">
-	<!--
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    {% if include.type == "grid" and teaser %}
-      <div class="archive__item-teaser">
-        <img src=
-          {% if teaser contains "://" %}
-            "{{ teaser }}"
-          {% else %}
-            "{{ teaser | prepend: "/images/" | prepend: base_path }}"
-          {% endif %}
-          alt="">
-      </div>
-    {% endif %}  
-    <!--
-    <h2 class="archive__item-title" itemprop="headline">
-      {% if post.link %}
-        <a href="{{ post.link }}">{{ title }}</a> <a href="{{ base_path }}{{ post.url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
-      {% else %}
-        <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
-      {% endif %}
-    </h2>    
-	-->
 	{% if post.read_time %}
 	<p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
 	{% endif %}
@@ -57,11 +35,11 @@
 <!--		  <div class="col-xs-12 col-sm-12 col-md-12">-->
 <!--			<h4 style="font-max-size:4em">{{post.authors}}</h4>-->
 			  <p> {{post.authors}} </p>
-			  <button type="button" class="btn btn-primary btn-xs" data-toggle="collapse" data-target="#{{post.short}}_abstract">Abstract</button>
+			  <button type="button" class="btn btn-primary btn-sm btn-rounded" data-toggle="collapse" data-target="#{{post.short}}_abstract" aria-expanded="false" aria-controls="{{post.short}}_abstract">Abstract</button>
 			  <div id="{{post.short}}_abstract" class="collapse">
 			  		<p class="bg-info"> {{post.abstract}} </p>
 			  </div>
-			  <button type="button" class="btn btn-primary btn-xs" data-toggle="collapse" data-target="#{{post.short}}_bibtex">Bibtex</button>
+			  <button type="button" class="btn btn-primary btn-sm btn-rounded" data-toggle="collapse" data-target="#{{post.short}}_bibtex" aria-expanded="false" aria-controls="{{post.short}}_bibtex">Bibtex</button>
 			  <div id="{{post.short}}_bibtex" class="collapse">
 				  	<pre><tt>{{post.bibtex}}</tt></pre>
 			  </div>
@@ -83,31 +61,7 @@
 
 		  </div>
 	   </div>
-    {% elsif post.collection == 'projects' %}
-	  <div class="row">
-		  <div class="col-xs-10 col-sm-4 col-md-4">
-			<a class="thumbnail">
-			  <img src="{{post.thumbnail}}" alt="">
-			</a>
-		  </div>                    
-		<h3>{{post.title}}</h3><br>		
-		<h4>{{post.authors}}</h4><br>
-		  <button type="button" class="btn btn-primary btn-sm btn-rounded" data-toggle="collapse" data-target="#{{post.short}}_abstract" aria-expanded="false" aria-controls="{{post.short}}_abstract">Abstract</button>
-		  <div id="{{post.short}}_abstract" class="collapse">        
-		  <p class="bg-success">
-			  {{post.abstract}} </p>
-		  </div>  		
-		  <button type="button" class="btn btn-primary btn-sm btn-rounded" data-toggle="collapse" data-target="#{{post.short}}_bibtex" aria-expanded="false" aria-controls="{{post.short}}_bibtex">Bibtex</button>
-		  <div id="{{post.short}}_bibtex" class="collapse">
-			  <pre><tt>{{post.bibtex}}</tt></pre>
-		  </div>
-		{% if post.code %}		
-		<a href="{{post.code}}"><button type="button" class="btn btn-primary btn-sm btn-rounded">Code</button></a>          	
-		{% endif %}	
-		{% if post.pdf %}
-		<a href="{{post.pdf}}"><button type="button" class="btn btn-primary btn-xs btn-rounded">PDF</button></a>          
-		{% endif %}	
-	   <p>Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
+    
 	{% elsif post.date %}
 	 <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
     {% endif %}
