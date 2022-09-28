@@ -25,7 +25,6 @@ Some others forks:
     ```
     ## in file: _includes/head/custom.html  and add 2 files `bootstrap.min.css`, `bootstrap.css` into assets/css/
     <link rel="stylesheet" href="{{ base_path }}/assets/css/bootstrap.css"/>  
-    ## options
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>  -->
     ```
@@ -48,4 +47,10 @@ Change font size nav-tabs, nav-side,... in file `bootstraps.css`
 
 ```
 
-But this may not work. So go `https://github.com/twbs/bootstrap` to update 2 files `bootstrap.css` and `bootstrap.min.css` to newer. It works now.
+But this may not work. Solution: update `bootstrap.css`. just edit file: `_includes/head/custom.html`, do not need download 2 files .css and .js
+```
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"/>  
+<script src="https://code.jquery.com/jquery-3.6.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"></script>
+```
+But the dynamic button may only work with `bootstrap 3`
