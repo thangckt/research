@@ -25,7 +25,7 @@ comments:
   disqus:
     shortname            :
   discourse:
-    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
+    server               :   # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
     appid                :
     num_posts            : 5 # 5 (default)
@@ -48,6 +48,7 @@ staticman:
         format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
 atom_feed:
   path                   : # blank (default) uses feed.xml
+
 
 # SEO Related
 google_site_verification :
@@ -233,7 +234,6 @@ defaults:
     values:
       layout: single
       author_profile: true
-      share: true
       comments: true
   # _manuscripts
   - scope:
@@ -254,12 +254,17 @@ defaults:
   # _portfolio
   - scope:
       path: ""
-      type: portfolio
+      type: manuscripts
     values:
       layout: single
-      author_profile: true
-      share: true
-      comment: true
+      author_profile: true      
+  # _projects
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: project_page
+      author_profile: false
   # _talks
   - scope:
       path: ""
