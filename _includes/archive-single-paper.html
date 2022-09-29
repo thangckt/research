@@ -37,11 +37,11 @@
 			<!-- <p style="font-size:14px">{{post.authors}}</p> -->
 			<p> {{post.authors}} </p>
 
-			<button type="button" class="btn btn-primary btn-sm btn-rounded" data-toggle="collapse.show" data-target="#{{post.short}}_abstract" aria-expanded="false" aria-controls="{{post.short}}_abstract">Abstract</button>
+			<button type="button" class="btn btn-primary btn-sm btn-rounded" data-toggle="collapse.show" data-target="#{{post.short}}_abstract" >Abstract</button>
 			<div id="{{post.short}}_abstract" class="collapse">
 				<p class="bg-info"> {{post.abstract}} </p>
 			</div>
-			<button type="button" class="btn btn-primary btn-sm btn-rounded" data-toggle="collapse" data-target="#{{post.short}}_bibtex" aria-expanded="false" aria-controls="{{post.short}}_bibtex">Bibtex</button>
+			<button type="button" class="btn btn-primary btn-sm btn-rounded" data-toggle="collapse" data-target="#{{post.short}}_bibtex" >Bibtex</button>
 			<div id="{{post.short}}_bibtex" class="collapse">
 				<pre><tt>{{post.bibtex}}</tt></pre>
 			</div>
