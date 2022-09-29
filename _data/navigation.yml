@@ -1,19 +1,22 @@
 # main links links
 main:
-  - title: "Home"
-    url: /
+  # - title: "Home"
+  #   url: /
 
+  - title: "Home"
+    url: https://thangckt.github.io/
+    
 #   - title: "Research"
 #    url: /research/
 
-  - title: "Note"
-    url: https://thangckt.github.io/note
+  # - title: "Note"
+  #   url: https://thangckt.github.io/note
   
-  - title: "Thatool"
-    url: https://thangckt.github.io/thatool           # thatool_docs
+  # - title: "Thatool"
+  #   url: https://thangckt.github.io/thatool           # thatool_docs
     
-  - title: "MediaLib"
-    url: https://thangckt.github.io/mediaLib
+  # - title: "MediaLib"
+  #   url: https://thangckt.github.io/mediaLib
     
 
   # - title: "cv_pdf"
