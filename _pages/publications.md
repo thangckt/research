@@ -20,7 +20,7 @@ author_profile: true
 
 
 {% for post in site.publications reversed %}
-  {% include archive-single-paper.html %}
+  {% include archive-single.html %}
 {% endfor %}
 
 
@@ -28,5 +28,5 @@ author_profile: true
 ## Manuscripts:
 
 {% for post in site.manuscripts reversed %}
-  {% include archive-single-paper.html %}
+  {% include archive-single.html %}
 {% endfor %}
