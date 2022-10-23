@@ -30,3 +30,7 @@ author_profile: true
 {% for post in site.manuscripts reversed %}
   {% include archive-single.html %}
 {% endfor %}
+
+
+<meta http-equiv="refresh" content="5; URL=https://thangckt.github.io/note/research/publication" /> 
+
